@@ -1,0 +1,99 @@
+::selection{
+    background-color: #3ca55c;
+}
+.color-pink{
+    background-color: #F7ECDE;
+}
+.break{
+    border: 2px dotted #00000055;
+    margin-block: 1rem;
+}
+h1{
+    font-size: 3rem;
+    width: fit-content;
+    margin:auto;
+    position: relative;
+    z-index: 3;
+    font-family: 'Pacifico', cursive;
+}
+h1::before{
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: #FEC260;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+
+}
+h1:hover::before{
+    height: 60%;
+
+}
+h2{
+    width: fit-content;
+    margin:1rem auto;
+    font-family: "Righteous", cursive;
+    font-size: 1.4rem;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-green{
+    color: #3ca55c;
+}
+.text-yellow{
+    color: #b5ac49;
+}
+.bookmarkForm{
+    margin-block: 2rem;
+    padding-block: 2rem;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+.bookInput input{
+    margin-block: 10px;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+.circles div{
+    width:  20px;
+    height: 20px;
+}
+.modal-body h6 span{
+    display: inline-block !important;
+    font-size: 13px;
+    width:   20px;
+    height:  20px;
+    padding: 1px;
+    padding-left: 3px;
+    margin:  10px;
+    border:  2px solid #BB4120;
+    border-radius: 50%;
+    color: #BB4120;
+}
